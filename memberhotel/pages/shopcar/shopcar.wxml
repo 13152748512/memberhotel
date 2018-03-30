@@ -1,0 +1,39 @@
+<view class="pagea">
+  <view class='carhoteltitle'>嘉信酒店</view>
+  <block wx:if="{{num}}">
+    <view class='carlist' wx:for="{{carlist}}" wx:key="{{carlist}}" wx:if="{{item.count<=0?false:true}}">
+      <view class='listdata clear'>
+        <image class='left carfoodimg' src='{{imageurl?imageurl+item.imgname:""}}'></image>
+        <view class='left'>
+          <view>{{item.name}}</view>
+          <view class='foodprice'>{{item.price}}</view>
+        </view>
+        <view class='right addreduce'>
+          <image class='reduce' catchtap='reducecount' data-foodid='{{item.foodid}}' src='../../images/reduce.png'></image>
+          <text class='carnum'>{{item.count}}</text>
+          <image class='add' catchtap='addcount' data-foodid='{{item.foodid}}' src='../../images/add.png'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='nofoods'>
+      <image src='../../images/bordercar.png'></image>
+      <view>购物车空空如也，赶紧来喂饱它呀</view>
+      <!-- <view class='sell' bindtap='goindex'>马上购买</view> -->
+    </view>
+  </block>
+  <view class='car'>
+    <view class='carimg left'>
+      <image src='../../images/car.png'></image>
+      <view class='number'>{{num?num:0}}</view>
+    </view>
+    <view class='left money'>{{tprice?tprice:0}}元</view>
+    <block wx:if="{{!num}}">
+      <view class='right cartext'>购物车为空</view>
+    </block>
+    <block wx:else>
+      <view class='right cartext' style='background-color:#ED742E;color:#fff'>立即结算</view>
+    </block>
+  </view>
+</view>

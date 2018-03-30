@@ -1,0 +1,120 @@
+comfirm.foodsintroduce {
+  background-color: #fff;
+  padding: 26rpx;
+}
+
+.foodsintroduce image {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 30rpx;
+}
+
+.foodstitle {
+  font-size: 28rpx;
+  padding-bottom: 14rpx;
+}
+
+.foodseat {
+  color: #9e9e9e;
+  font-size: 22rpx;
+}
+
+.foodseat text:nth-child(1) {
+  margin-left: 10rpx;
+  margin-right: 60rpx;
+}
+
+.foodsprice {
+  color: #d0682d;
+  margin-left: 12rpx;
+  line-height: 60rpx;
+}
+
+.fdatatitle {
+  margin-top: 10rpx;
+  background-color: #fff;
+  padding: 16rpx 10rpx;
+}
+
+.fdatatitle .redline {
+  width: 4rpx;
+  height: 30rpx;
+  margin-right: 26rpx;
+  background-color: #d34d47;
+}
+
+.bigimage {
+  width: 100%;
+  height: 720rpx;
+}
+
+.comfirm {
+  background-color: #fff;
+  text-align: center;
+  line-height: 120rpx;
+  color: #bfbfbf;
+}
+
+/* 底部购物车 */
+
+.bottomcar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  border-top: 4rpx solid #ebebeb;
+}
+
+.publicwidth {
+  width: 50%;
+}
+
+.bottomcar image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.carshop {
+  display: inline-block;
+  text-align: center;
+  padding-top: 10rpx;
+  color: #a4a4a4;
+  font-size: 20rpx;
+}
+
+.car {
+  color: #a4a4a4;
+  font-size: 20rpx;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10rpx;
+  position: relative;
+}
+
+.carnumber {
+  position: absolute;
+  top: -4rpx;
+  right: 46rpx;
+  padding: 2rpx 10rpx;
+  box-sizing: border-box;
+  background-color: #e96d2e;
+  color: #fff;
+  border-radius: 20rpx;
+}
+
+.carpublic {
+  width: 50%;
+  display: inline-block;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.addcar {
+  background-color: #f3bd41;
+}
+
+.prompay {
+  background-color: #ed742e;
+}

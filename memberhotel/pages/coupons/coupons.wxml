@@ -1,0 +1,65 @@
+<view class="page">
+  <view class="share">
+    <image class="shareimg" src="../../images/youhuibck.png"></image>
+    <!-- <view class="tellafriend">
+      <view class="share-bak">
+        <image></image>
+        <text>分享给好友</text>
+      </view>
+    </view> -->
+  </view>
+  <!--可领取  -->
+  <view class="coupon">
+    <image class="image" src="../../images/yoihuijuan.png"></image>
+    <view class="message">
+      <view class="money">
+        <view>
+          <text class="symbol">￥</text>
+          <text class="moneynum">20.00</text>
+        </view>
+        <text >消费满70.00可用</text>
+      </view>
+      <view class="hint">
+        <view class="getcount">
+          <text>领取数量：</text>
+          <text>每人可领1张</text>
+        </view>
+        <view class="validity">
+          <text>有限期限：</text>
+          <text>2018-02-26 15:11:44 -永久有效</text>
+        </view>
+      </view>
+    </view>
+    <view class="btn">
+      <text class="btn-text">立即</text>
+      <text>领取</text>
+    </view>
+  </view>
+  <!--已领取  -->
+  <view class="coupon">
+    <image class="image" src="../../images/lyyouhuijuan.png"></image>
+    <view class="message">
+      <view class="money">
+        <view>
+          <text class="symbol">￥</text>
+          <text class="moneynum">20.00</text>
+        </view>
+        <text >消费满70.00可用</text>
+      </view>
+      <view class="hint">
+        <view class="getcount">
+          <text>领取数量：</text>
+          <text>每人可领1张</text>
+        </view>
+        <view class="validity">
+          <text>有限期限：</text>
+          <text>2018-02-26 15:11:44 -永久有效</text>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="btn">
+      <text class="btn-text">立即</text>
+      <text>领取</text>
+    </view> -->
+  </view>
+</view>

@@ -1,0 +1,25 @@
+
+  <view class='header page'>
+    <image class='nackimg left' src='../../images/ren.png'></image>
+    <view class='left membertext'>
+      <view>乐观者</view>
+      <view>2积分</view>
+    </view>
+    <view class='membercard right'>查看积分记录</view>
+  </view>
+  <view class="subject page">
+    <view>
+      <view class='title'>你已连续签到</view>
+      <view>
+        <text class='sky'>2</text>
+        <text class="tian">天</text>
+      </view>
+    </view> 
+    <button class="btn">马上签单</button>
+  </view>
+  <view class='footer page'>
+    <view>签到规则：</view>
+    <view>每日来签到，养成好习惯</view>
+    <view>每日可签到1次，每次签到奖励1积分</view>
+  </view>
+

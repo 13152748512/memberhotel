@@ -1,0 +1,106 @@
+.nofoods{
+  text-align: center;
+}
+.nofoods image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 200rpx;
+  margin-bottom: 100rpx;
+}
+.nofoods .sell{
+  margin: 0 auto;
+  margin-top: 100rpx;
+  border: 2rpx solid #7FBA6D;
+  color: #7FBA6D;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 160rpx;
+}
+.car{
+  height: 84rpx;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+   background-color: #4A4A4A; 
+  width: 100%;
+}
+.carimg{
+  width: 100rpx;
+  height: 100rpx;
+  border: 2rpx solid #fff;
+  background-color: #EE7830;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 14rpx;
+  margin-top: -24rpx;
+  margin-left: 20rpx;
+  position: relative;
+}
+.carimg image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.number{
+  width: 18rpx;
+  height: 18rpx;
+  text-align: center;
+  line-height: 18rpx;
+  position: absolute;
+  top: 2rpx;
+  right: 2rpx;
+  padding: 8rpx;
+  background-color: #4A4A4A;
+   border-radius: 50%; 
+}
+.money{
+  line-height: 100rpx;
+  margin-left: 40rpx;
+}
+.cartext{
+  width: 230rpx;
+  text-align: center;
+  background-color: #F2F2F2;
+  line-height: 84rpx;
+  color: #9E9E9E;
+}
+
+.carhoteltitle{
+  background-color: #F2F2F2;
+  padding: 20rpx;
+}
+.carfoodimg{
+  width: 110rpx;
+  height: 110rpx;
+  margin-right: 40rpx;
+}
+.carnum{
+  line-height: 60rpx;
+  /* display: inline-block; */
+  padding: 0 24rpx;
+
+}
+.foodprice{
+  color: #C78556;
+  line-height: 70rpx;
+}
+.reduce{
+  width: 58rpx;
+  height: 58rpx;
+  vertical-align: middle;
+}
+.add{
+  width: 54rpx;
+  height: 54rpx;
+  vertical-align: middle;
+}
+.listdata{
+  border-bottom: 2rpx solid #F5F5F5;
+  padding-bottom: 18rpx;
+}
+.carlist{
+  padding: 20rpx;
+}
+.addreduce{
+  padding-top: 30rpx;
+}

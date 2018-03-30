@@ -1,0 +1,21 @@
+<view>
+  <view catchtap="golineitem">
+    <!--灰色背景  -->
+    <view class="GreyBackground"></view>
+    <view class="list">
+      <view class="time">
+        <text>2018-02-24</text>
+        <text>15:23:00</text>
+      </view>
+      <view class="status">
+        <text class="title">名品烤鸭名牌烤鸭名牌烤鸭名牌烤鸭</text>
+        <text>￥0.01</text>
+        <text class="state">已支付</text>
+      </view>
+      <view class="salesprice">
+        <text class="sales left">共1件商品</text>
+        <text class="price right">￥0.01</text>
+      </view>
+    </view>
+  </view>
+</view>

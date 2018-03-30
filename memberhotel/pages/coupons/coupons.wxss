@@ -1,0 +1,103 @@
+.page{
+  background-color: #fff !important;
+}
+.share{
+  width:100%;
+  height:500rpx;
+  position: relative;
+}
+.shareimg{
+  width:100%;
+  height:500rpx;
+  position: absolute;
+  top:0rpx;
+}
+.tellafriend{
+  width: 230rpx;
+  height: 65rpx;
+  border: 4rpx solid #DF273F;
+  position:absolute;
+  bottom: 10rpx;
+  border-radius: 4px;
+  margin:0rpx 0rpx 0rpx -115rpx;
+  left:50%;
+  text-align: right;
+  line-height: 65rpx;
+}
+.share-bak{
+  width:100%;
+  height: 100%;
+  background-color: #FC4642;
+  border-radius: 2px;
+}
+.tellafriend image{
+  width: 20rpx;
+  height: 20rpx;
+  margin-right:20rpx;
+}
+.tellafriend text{
+  color:#fff;
+  margin-right: 20rpx;
+}
+.coupon{
+  width: 100%;
+  height: 330rpx;
+  padding:0rpx 30rpx;
+  box-sizing:border-box;
+  position: relative
+}
+.image{
+  width:100%;
+  height:330rpx;
+  position: absolute;
+  top: 0rpx;
+  left:0rpx;
+}
+.money ,.hint{
+  position: absolute;
+  left: 50rpx;
+}
+.money{
+  top: 20rpx;
+}
+.money text{
+  color:#fff;
+}
+.money view{
+  margin-bottom: 12rpx;
+}
+.symbol{
+  font-size:1.2rem;
+  position:relative;
+  top:-13px;
+  margin-right:15rpx;
+}
+.moneynum{
+  font-size:2.2rem;
+  margin-bottom:10rpx;
+}
+.hint{
+  bottom: 50rpx;
+  color: #C6C6C6;
+}
+.getcount{
+  margin-bottom:10rpx;
+}
+.btn text{
+  display: block;
+  width:250rpx;
+  height:100rpx;
+  font-size:1.3rem;
+}
+.btn-text{
+  line-height: 135rpx;
+}
+.btn{
+  width:250rpx;
+  height:190rpx;
+  color:#fff;
+  position:absolute;
+  right:20rpx;
+  border-left:1px dotted #eee;
+  text-align:center;
+}

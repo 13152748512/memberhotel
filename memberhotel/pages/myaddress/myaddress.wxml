@@ -1,0 +1,86 @@
+<view class='page'>
+  <view  wx:if="{{!showw}}"  class="addevent">
+    <view bindtap='addsite'data-show="0">
+      <image src='../../images/wxb.png'></image>
+      <text>新增收货地址</text>
+    </view>
+  </view> 
+  <!--填写地址  -->
+  <view wx:if="{{showw}}" class="addsite">
+    <view class="marked">在下面填写地址</view>
+    <view class="main">
+      <view class="uname">
+        <text>收货姓名</text>
+        <input type='tetx' placeholder='姓名' bindinput='adduname'value="{{uname}}"></input>
+      </view>
+      <view class="phone" >
+        <text>联系电话</text>
+        <input bindinput="addphone" type='number' placeholder='请输入你的电话号码' value="{{phone}}"></input>
+      </view>
+      <view class="choicedq">
+        <text>选择地区</text>
+        <view class="Province" bindtap="translate">{{province}}-{{city}}-{{county}}</view>
+      </view>
+      <view class='address'>
+        <text>详细地址</text>
+        <textarea placeholder="请输入你的地址" bindinput="address" value="{{address}}"></textarea>
+        <view bindtap='requestLocation'>
+          <image class="dingwei" src='../../images/dw.png'></image>
+        </view>
+      </view>
+    </view>
+    <button wx:if="{{!editoraddsite}}" class='btn' bindtap='addsite' data-show="1">确定添加地址</button>
+    <button wx:if="{{editoraddsite}}" class='btn' bindtap='editorsite' >确定编辑地址</button>
+  </view>
+ <!--已填地址  -->
+  <view class="site"  wx:for="{{ressarr}}" wx:key="{{address}}">
+    <view class='namephone'>
+      <view class='name left'>
+        <image src='../../images/iconfont-fuwushichang.png'></image>
+        <text>{{item.uname}}</text>
+      </view>
+      <view class='left'>
+        <image src='../../images/iconfont-phone.png'></image>
+        <text>{{item.phone}}</text>
+      </view>
+    </view>
+    <view class="location">
+      <image src='../../images/wxb.png'></image>
+      <text>{{item.province}}{{item.city}}{{item.county}}{{item.address}}</text>
+    </view>
+    <view class="handle">
+      <text data-id='{{index}}' bindtap="editor">编辑</text>
+      <text data-id='{{index}}' bindtap="deletaAbdress">删除</text>
+      <text class="{{id===index?'gules':''}}" data-id='{{index}}' bindtap="DefaultAddress">{{id===index?Changed:title}}</text>
+    </view>
+  </view>
+</view>
+<!--***********************************  -->
+<view class="animation-element-wrapper" animation="{{animation}}" style="visibility:{{show ? 'visible':'hidden'}}" bindtap="hiddenFloatView" data-id="444">
+    <view class="animation-element" catchtap="nono">
+      <text class="left-bt" catchtap="hiddenFloatView" data-id="555">取消</text>
+      <text class="right-bt" catchtap="hiddenFloatView" data-id="666">确定</text>
+        <view class="line"></view> 
+
+      <picker-view indicator-style = "height: 50rpx;" value="{{value}}" bindchange="bindChange" catchtap="nono">
+      <!--省-->
+      <picker-view-column>
+          <view wx:for="{{provinces}}" wx:for-item="sheng" wx:key="">
+            {{sheng.name}}
+        </view>
+      </picker-view-column>
+      <!--地级市-->
+      <picker-view-column>
+        <view wx:for="{{citys}}" wx:key="">
+          {{item.name}}
+        </view>
+      </picker-view-column>
+      <!--区县-->
+      <picker-view-column>
+        <view wx:for="{{countys}}" wx:key="">
+          {{item.name}}
+        </view>
+      </picker-view-column>
+      </picker-view>
+  </view>
+</view>

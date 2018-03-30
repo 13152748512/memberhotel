@@ -1,0 +1,47 @@
+<view class="page pages">
+  <view class="dishes">
+    <view class="dishestitle">菜品信息</view>
+    <view class="disheslist">
+      <view class=" dishName">名牌烤鸭名牌烤鸭名牌烤鸭名牌烤鸭名牌烤鸭名牌烤鸭</view>
+      <view class="unit-price">￥0.01</view>
+      <view class="count">×1</view>
+    </view>
+    <view class="payment">
+      <text class='right paymentAmount'>已支付：￥0.01</text>
+      <text class='right'>减免：￥0</text>
+      <text class="right">总价：￥0.01</text>
+    </view>
+  </view>
+  <!--灰色背景  -->
+  <view class="GreyBackground"></view>
+  <view class="remark">
+    <view class="remarktitle">订单备注</view>
+    <view class="remarkMessage">
+      <!--订单编号  -->
+      <view>
+        <text>订单编号：</text>
+        <text>12324343454354</text>
+      </view>
+      <!--支付方式  -->
+      <view>
+        <text>支付方式：</text>
+        <text>在线支付</text>
+      </view>
+      <!--支付状态 -->
+      <view>
+        <text>支付状态：</text>
+        <text>已支付</text>
+      </view>
+      <!--就餐人数 -->
+      <view>
+        <text>就餐人数：</text>
+        <text>1</text>
+      </view>
+      <!--下单时间 -->
+      <view>
+        <text>下单时间：</text>
+        <text>2018-01-24 20:01:22</text>
+      </view>
+    </view>
+  </view>
+</view>

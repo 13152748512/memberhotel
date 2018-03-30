@@ -1,0 +1,355 @@
+@import '../../app.wxss';
+
+.seacher {
+  width: 91%;
+  margin: 0 auto;
+  padding: 25rpx 0;
+  box-sizing: border-box;
+}
+
+.seacherinp {
+  display: inline-block;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 14rpx;
+  width: 88%;
+  height:65rpx;
+}
+
+.seacherinp .seacherimg {
+  float: left;
+  width: 35rpx;
+  height: 35rpx;
+  margin-top:20rpx;
+  margin-left:12rpx;
+}
+.seacherinp input {
+  float: left;
+  margin-left:8rpx;
+  margin-top:12rpx;
+  width: 500rpx;
+}
+
+.seachertext {
+  color: #6bb85a;
+  float: right;
+  line-height: 60rpx;
+  margin-top:10rpx;
+  font-size:0.9rem;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+swiper {
+  height: 460rpx;
+}
+
+.notice {
+  background-color: #fff5d2;
+  height: 80rpx;
+  padding-left: 30rpx;
+  margin: 10rpx 0;
+}
+
+.notice text {
+  color: #ecac50;
+  line-height: 80rpx;
+}
+
+.gongneng {
+  overflow: hidden;
+  height: 150rpx;
+  background-color: #fff;
+  padding: 20rpx 0;
+  margin-bottom: 10rpx;
+}
+
+.gongneng .gongnengimg {
+  height: 140rpx;
+  width: 24.5%;
+  float: left;
+  text-align: center;
+}
+
+.gongnengimg image {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.huodong {
+  height: 210rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.huodongimg {
+  width: 33%;
+  height: 200rpx;
+  float: left;
+}
+
+.huodongimg image {
+  width: 100%;
+  height: 160rpx;
+}
+
+.choujiangtext {
+  text-align: center;
+}
+
+.chanpin {
+  background-color: #fff;
+  margin: 10rpx 0;
+  padding: 20rpx 0;
+}
+
+.chanpin .chanpinline {
+  height: 2rpx;
+  width: 280rpx;
+  margin: 0 20rpx;
+  display: inline-block;
+  background-color: #e2e2e2;
+}
+
+.chanpin text:nth-child(2) {
+  color: #d17361;
+}
+
+.category {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10rpx;
+}
+
+.category .foodcategory {
+  width: 49.8%;
+  box-sizing: border-box;
+  height: 340rpx;
+  float: left;
+}
+
+.foodcategory image {
+  width: 100%;
+  height: 290rpx;
+}
+
+.foodcategory .text {
+  text-align: center;
+}
+
+.categorydata {
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+  margin: 10rpx 0;
+  position: relative;
+}
+
+.categorydata .mone {
+  position: absolute;
+  right: 40rpx;
+  color: #76afdc;
+  top: 0;
+}
+
+.foodslist {
+  white-space: nowrap;
+  height: 380rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.fooddata{
+  width: 40%;
+  display: inline-block;
+  margin-right: 16rpx;
+}
+
+.fooddata  image{
+  width: 100%;
+  height: 280rpx;
+}
+.foodtitle{
+  font-size: 30rpx;
+  font-weight: 700;
+  margin: 10rpx 0 10rpx 20rpx;
+}
+.money{
+  color: #CB7D3C;
+  margin-left: 10rpx;
+}
+
+
+
+/* 菜单 */
+/* 分类 */
+
+.left_slider {
+  width: 155rpx;
+  height: 1065rpx;
+  float: left;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+
+
+.broad_side_box{
+  width:115rpx;
+  min-height:40rpx;
+  background: #f9f9f9;
+  padding:20rpx 20rpx; 
+  border-bottom:2rpx solid #ededed;
+  overflow: hidden;
+}
+
+.broad_active{
+  background:#fff;
+}
+
+.border_bottom_line{
+  width:130rpx;
+  height:2rpx;
+   margin:0 auto; 
+   background: #ededed
+}
+
+.broad_text{
+  width: 100%;
+  min-height:40rpx;
+  line-height: 40rpx;
+}
+.broad_text_more{
+  width: 100%;
+  min-height:40rpx;
+  line-height: 34rpx;
+}
+
+.left_icon{
+  width:26rpx;
+  height:auto;
+  float: left;
+}
+.left_icon image{
+  width:26rpx;
+  height:26rpx;
+}
+.right_text{
+  width:80rpx;
+  height:auto;
+  line-height: 34rpx;
+  float: right;
+}
+/* 类目详情 */
+.right_slider {
+  float: left;
+  width: 580rpx;
+  height: 1065rpx;
+  box-sizing: border-box;
+}
+.dish_list{
+  width:580rpx;
+  height:215rpx;
+  border-bottom:1px solid #f3f3f3;
+  padding-bottom:15rpx;
+  margin-left:17rpx;
+}
+
+.left_dish_cover{
+  width:120rpx;
+  height:120rpx;
+  margin:30rpx 20rpx 0;
+  margin-left: 0;
+  float:left;
+  position: relative;   
+}
+.left_dish_cover image{
+  width:120rpx;
+  height:120rpx; 
+  position: absolute;
+  left:0;
+  top:0;  
+}
+.right_dish_cont{
+  width:420rpx;
+  height:160rpx;
+  float:left;
+  margin:30rpx 0 0 0;
+}
+.dish_title{
+  width:90%;
+  height:50rpx;
+  line-height:50rpx;
+  font-size:28rpx;
+}
+.dish_desc{
+  width:80%;
+  height:30rpx;
+  line-height:30rpx;
+  color:#666;
+}
+.dish_comment{
+  width:100%;
+  height:40rpx;
+  line-height: 40rpx;
+  font-size:20rpx;  
+}
+.dish_comment :first-child{
+  margin-right:18rpx;
+}
+.dish_comment :last-child{
+  color:#666;
+}
+.dish_bottom{
+  width:100%;
+  height:50rpx;
+  line-height: 50rpx;
+  margin-top:10rpx;
+  position: relative;
+}
+.discount_price{
+  width:auto;
+  height:50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color:#ef4747;
+  margin-right: 10rpx;
+}
+.price{
+  width:auto;
+  height:50rpx;
+  line-height: 40rpx;
+  color: #666;
+  font-size:22rpx;
+  text-decoration: line-through;  
+}
+.addDish{
+  width:50rpx;
+  height:50rpx;
+  display: block;
+  float: right;
+  text-align: center;
+  color:#fff;
+  font-size: 40rpx;
+  margin:0 20rpx 0 0 ;
+}
+
+.reduceDish{
+  width:50rpx;
+  height:50rpx;
+  display: block;
+  float: right;
+  color:#f4b31c;
+  font-size: 40rpx;
+  margin:0 0 0 0 ;
+}
+.dishCount{
+  width:auto;
+  height:40rpx;
+  padding:0 16rpx;
+  float:right;
+}
+.marle{
+  margin:16rpx 0px 0px 150rpx;
+}

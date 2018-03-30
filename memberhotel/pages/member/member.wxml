@@ -1,0 +1,64 @@
+<view class='pagea'>
+  <view class='header'>
+    <view class='left txgrade'>
+      <image class='nackimg left' src='../../images/ren.png'></image>
+      <view class="grade">普通会员</view>
+    </view>
+    <view class='left membertext'>
+      <view class="uname">我是一只小鸟</view>
+      <view class="signin">
+        <image class='ljqd' src='../../images/qd.png'></image>
+        <text>立即签到</text>
+      </view>
+    </view>
+    <image class='membercard right' src="../../images/erweima.png"></image>
+  </view>
+  <view class='carddata'>
+    <view class='cardpublic bor'>
+      <view>0.00</view>
+      <view>充值卡</view>
+    </view>
+    <view class='cardpublic bor'>
+      <view>0</view>
+      <view>优惠券</view>
+    </view>
+    <view class='cardpublic'>
+      <view>0</view>
+      <view>积分</view>
+    </view>
+  </view>
+  <view class="dscc">
+    <view class='interaction' catchtap="goskip" data-url="orderlist/orderlist">
+      <image class='publicimg1' src='../../images/mydd.png'></image>
+      <view class='minetext'>我的订单</view>
+    </view>
+    <view class="interaction" catchtap="goskip">
+      <image class='publicimg1' src='../../images/mysc.png'></image>
+      <view class='minetext'>我的收藏</view>
+    </view>
+    <view class="interaction" catchtap="goskip" data-url="prize/prize">
+       <image class='publicimg1' src='../../images/xycj.png'></image>
+      <view class='minetext'>幸运抽奖</view>
+    </view>
+    <view class="interaction" catchtap="goskip" data-url="pointsmall/pointsmall">
+       <image class='publicimg1' src='../../images/jfsc.png'></image>
+      <view class='minetext'>积分商城</view>
+    </view>
+  </view>
+  <view class='datalist'>
+    <view class='minedata'>
+      <!--我的地址  -->
+      <view class='minepublic'  catchtap="goskip" data-url="myaddress/myaddress">
+        <image class='left publicimg1' src='../../images/mydz.png'></image>
+        <view class='left minetext'>我的地址</view>
+        <image class='right publicimg' src='../../images/right.png'></image>
+      </view>
+      <view class="minepublic" catchtap="goskip" data-url="recharge/recharge">
+        <image class='left publicimg1' src='../../images/czjl.png'></image>
+        <view class='left minetext'>充值记录</view>
+        <image class='right publicimg' src='../../images/right.png'></image>
+      </view>
+    </view>
+  </view>
+   <view class='comfirm'>北京智付科技有限责任公司提供技术支持</view>
+</view>

@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shopcar/shopcar",
+    "pages/member/member",
+    "pages/mine/mine",
+    "pages/prize/prize",
+    "pages/recharge/recharge",
+    "pages/foodsdata/foodsdata",
+    "pages/orderlist/orderlist",
+    "pages/lineitem/lineitem",
+    "pages/discountsPay/discountsPay",
+    "pages/coupons/coupons",
+    "pages/sign/sign",
+    "pages/pointsmall/pointsmall",
+    "pages/myaddress/myaddress"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#CC4039",
+    "navigationBarTitleText": "嘉信酒店",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/shouye.png",
+        "selectedIconPath":"images/shouye.png",
+        "text": "店铺首页"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "selectedIconPath": "images/gouwuche.png",
+        "iconPath": "images/gouwuche.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "selectedIconPath": "images/huiyuan.png",
+        "iconPath": "images/huiyuan.png",
+        "text": "会员中心"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "selectedIconPath": "images/dianpu.png",
+        "iconPath": "images/dianpu.png",
+        "text": "店铺介绍"
+      }
+    ],
+    "selectedColor":"#F13C26"
+  }
+}

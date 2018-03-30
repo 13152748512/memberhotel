@@ -1,0 +1,14 @@
+@import '../../app.wxss';
+.headerimg image{
+  width: 100%;
+  height: 300rpx;
+}
+.prizedata{
+  height: 908rpx;
+  background-color: #EC314E;
+  margin-top: -10rpx;
+}
+.nodata{
+  color: #fff;
+  text-align: center;
+}

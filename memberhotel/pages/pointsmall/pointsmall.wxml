@@ -1,0 +1,36 @@
+<view class='page'>
+  <view class='header'>
+    <view class="jifen">
+      <text>2</text>
+      <view>我的积分</view>
+    </view> 
+    <view class="portrait">
+      <image src="../../images/ren.png"></image>
+      <text class="name">乐观者</text>
+    </view>
+    <view class="dengji">
+      <view>普通会员</view>
+      <view class="mydengji">我的等级</view>
+    </view>
+  </view>
+  <view class="refer">
+    <view class="datail">
+      <image src="../../images/search.png"></image>
+      <view>积分详细</view>
+    </view>
+    <view class='record'>
+      <image src="../../images/calendar.png"></image>
+      <view>兑奖记录</view>
+    </view>
+  </view>
+  <view class="store">
+    <image src='../../images/gifts.png'></image>
+    <text>积分商城</text>
+  </view>
+  <view class='points'>
+    <view class="tishi">
+      <image src="../../images/Smile.png"></image>
+      <view >暂无可兑换的积分商品哦！</view>
+    </view>
+  </view>
+</view>

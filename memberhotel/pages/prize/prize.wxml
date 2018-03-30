@@ -1,0 +1,8 @@
+<view class='page'>
+  <view class="headerimg">
+    <image src='../../images/prize.png'></image>
+  </view>
+  <view class='prizedata'>
+    <view class='nodata'>商家还没有添加活动呢！</view>
+  </view>
+</view>

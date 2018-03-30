@@ -1,0 +1,41 @@
+<view class="page">
+  <view class='foodsintroduce clear'>
+  <block wx:if="{{imgurl}}">
+    <image class='left' src='{{imgurl+imgname}}'></image>
+    </block>
+    <view class='left'>
+      <view class='foodstitle'>{{title}}</view>
+      <view class='foodseat'>
+        <text>{{id}}人想吃</text>
+        <text>积分：{{intergal}}</text>
+      </view>
+      <view class='foodsprice'>{{price}}/例</view>
+    </view>
+  </view>
+  <view class='fdatatitle clear'>
+    <view class='left redline'></view>
+    <view class='left'>商品详情</view>
+  </view>
+  <block wx:if="{{imgurl}}">
+    <image src="{{imgurl+imgname}}" class='bigimage'></image>
+  </block>
+  <view class='comfirm'>北京智付科技有限责任公司提供技术支持</view>
+  <!-- 底部购物车 -->
+  <view class='bottomcar'>
+    <view class='left publicwidth'>
+      <view class='carshop publicwidth' catchtap='gomine'>
+        <image src='../../images/shopper.png'></image>
+        <view>店铺</view>
+      </view>
+      <view class='car publicwidth'>
+        <image src='../../images/shopper.png'></image>
+        <view>购物车</view>
+        <view class='carnumber'>{{num==0?0:num}}</view>
+      </view>
+    </view>
+    <view class='right publicwidth'>
+      <view class='carpublic addcar' catchtap='addcar' data-foodid="{{id}}" data-imgname="{{imgname}}" data-price="{{price}}" data-name="{{title}}">加入购物车</view>
+      <view class='prompay carpublic'>立即支付</view>
+    </view>
+  </view>
+</view>

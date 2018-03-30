@@ -1,0 +1,46 @@
+<view class='pagea'>
+  <view class='headerimg'>
+    <image src='../../images/member.png'></image>
+  </view>
+  <view wx:if="{{show}}" class="amountEntered">
+    <text>￥</text>
+    <input placeholder-class="text" maxlength="8" bindinput='EventHandle' type='digit' placeholder='请输入充值金额'></input>
+  </view>
+  <view class='moneynum'>
+    <view  data-id="1" data-paid="50" data-bysending="0" bindtap="RechargeAmount" class="publicbutton {{id==1?'color':''}}">
+      <!-- <view class='moneydata'> -->
+       <view>50元</view>
+       <view>赠送：0元</view>
+      <!-- </view> -->
+    </view>
+    <view  data-id="2" data-paid="200" data-bysending="30" bindtap="RechargeAmount" class="publicbutton {{id==2?'color':''}}">
+      <!-- <view> -->
+       <view>200元</view>
+       <view>赠送：30元</view>
+      <!-- </view> -->
+    </view>
+    <view  data-id="3" data-paid="300" data-bysending="60" bindtap="RechargeAmount" class="publicbutton {{id==3?'color':''}}">
+      <!-- <view> -->
+       <view>300元</view>
+       <view>赠送：60元</view>
+      <!-- </view> -->
+    </view>
+    <view data-id="4" bindtap='CustomAmount' class="publicbutton {{id==4?'color':''}}">
+      <!-- <view class='moneydata'> -->
+       <view class='custom'>自定义金额</view>
+      <!-- </view> -->
+    </view>
+  </view>
+  <view class='examine'>点击查看余额/充值记录</view>
+  <view class='figure'>
+    <view>
+      <text>到账金额：</text>
+      <text>{{paid}}元</text>
+    </view>
+    <view>
+      <text>支付金额:</text>
+      <text>{{paid-bysending}}元</text>
+    </view>
+  </view>
+  <button class="btn {{disabled?'':'bck'}}" disabled='{{disabled}}' bindtap='Recharge'>立即充值</button>
+</view>

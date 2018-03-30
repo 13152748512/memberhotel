@@ -1,0 +1,34 @@
+
+.page {
+  font-family: PingFangSC-Medium;
+  color: #4a4a4a;
+  font-size: 24rpx;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.pagea {
+  font-family: PingFangSC-Medium;
+  color: #4a4a4a;
+  font-size: 24rpx;
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  overflow: hidden;
+}
+.GreyBackground{
+  width:100%;
+  height:18rpx;
+  background:#EDEDED;
+}

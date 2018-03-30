@@ -1,0 +1,35 @@
+<view class="page pages">
+  <view  class="paytop">
+    <view class="payinput">
+      <text class="left">消费总金额:</text>
+      <input class="right" bindinput="enteramount" maxlength="-1" type="digit" placeholder="询问服务员后输入金额"></input>
+    </view>
+    <view>
+      <checkbox-group bindchange="checkboxChange">
+        <label>
+          <checkbox class="checkbox" ></checkbox>不参与优惠金额(如酒水，套餐)
+        </label>
+      </checkbox-group>
+    </view>
+     <view wx:if="{{show}}" class="payinput payinput1">
+      <text class="left">不参与优惠金额：</text>
+      <input class="right" bindinput="DiscountAmount" maxlength="-1" type="digit" placeholder="请询问服务员"></input>
+    </view>
+  </view>
+  <view >
+    <form bindsubmit="formSubmit">
+      <view class="money">
+        <text class="left">实付金额</text>
+        <text class="right money-sum">￥{{money}}</text>
+      </view>
+      <view wx:if="{{hide}}" class="guestbook" catchtap="messageBoard">
+        <text class="left">留言/意见栏</text>
+        <image class='membercard right' src="../../images/right.png"></image>
+      </view>
+      <view wx:if="{{!hide}}"  class="text">
+         <textarea bindinput="opinion" maxlength="-1"  placeholder="感谢您对我们为您的认可，你的建议将是我们的成长的动力"/>
+      </view>
+      <button class="btn" formType="submit">确认买单</button>
+    </form>
+  </view>
+</view>

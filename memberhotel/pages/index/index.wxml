@@ -1,0 +1,162 @@
+<view class='page'>
+  <view class='seacher'>
+    <view class='seacherinp'>
+      <image class='seacherimg' src='../../images/shousuo.png'></image>
+      <input placeholder='输入关键词查找商品'></input>
+    </view>
+    <view class='seachertext'>搜索</view>
+  </view>
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{lunboarr}}" wx:key="{{arr}}">
+      <swiper-item class="swiperItem">
+        <image src="{{item.img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='notice'>
+    <text>公告：</text>
+    <text>欢迎光临嘉信酒店！</text>
+  </view>
+  <view class='gongneng'>
+    <view data-url="coupons/coupons" class='gongnengimg' catchtap='cardcenter'>
+      <image src='../../images/lingjuan.png'></image>
+      <view>领券中心</view>
+    </view>
+    <view  data-url="sign/sign" class='gongnengimg' catchtap='cardcenter'>
+      <image src='../../images/yiqian.png'></image>
+      <view>每日一签</view>
+    </view>
+    <view class='gongnengimg' data-url="discountsPay/discountsPay" catchtap='cardcenter'>
+      <image src='../../images/youhui.png'></image>
+      <view>优惠买单</view>
+    </view>
+    <view class='gongnengimg' data-url="orderlist/orderlist" catchtap='cardcenter'>
+      <image src='../../images/dingdan.png'></image>
+      <view>我的订单</view>
+    </view>
+  </view>
+  <view class='huodong'>
+    <view class='huodongimg' catchtap='goprize'>
+      <image src='../../images/choujiang.png'></image>
+      <view class='choujiangtext'>幸运抽奖</view>
+    </view>
+    <view class='huodongimg' catchtap='gorecharge'>
+      <image src='../../images/chongzhi.png'></image>
+      <view class='choujiangtext'>在线充值</view>
+    </view>
+    <view class='huodongimg' data-url="pointsmall/pointsmall" catchtap='cardcenter'>
+      <image src='../../images/jifen.png'></image>
+      <view class='choujiangtext'>积分商城</view>
+    </view>
+  </view>
+  <view class='chanpin'>
+    <text class='chanpinline'></text>
+    <text>产品中心</text>
+    <text class='chanpinline'></text>
+  </view>
+  <view class='category'>
+    <view class='foodcategory'>
+      <image src="../../images/zhouzi.png"></image>
+      <view class='text'>嘉信扒全肘</view>
+    </view>
+    <view class='foodcategory'>
+      <image src="../../images/canyong.png"></image>
+      <view class='text'>干煸蚕蛹</view>
+    </view>
+    <view class='foodcategory'>
+      <image src="../../images/kaorou.png"></image>
+      <view class='text'>贝勒爷烤肉</view>
+    </view>
+    <view class='foodcategory'>
+      <image src="../../images/mofen.png"></image>
+      <view class='text'>笨鸡榛蘑粉</view>
+    </view>
+  </view>
+  <!-- <view class='categorydata'>
+    <text>- 海鲜、鱼类 （左右滑动）-</text>
+    <view class='mone'>更多></view>
+  </view> -->
+  <!-- <scroll-view scroll-x class='foodslist'>
+    <view class='fooddata'>
+      <image src='../../images/choujiang.png'></image>
+      <view class='foodtitle'>干煎小刀鱼</view>
+      <view class='money'>22.00元/例</view>
+    </view>
+    <view class='fooddata'>
+      <image src='../../images/choujiang.png'></image>
+      <view class='foodtitle'>干煎小刀鱼</view>
+      <view class='money'>22.00元/例</view>
+    </view>
+    <view class='fooddata'>
+      <image src='../../images/choujiang.png'></image>
+      <view class=' foodtitle'>干煎小刀鱼</view>
+      <view class='money'>22.00元/例</view>
+    </view>
+  </scroll-view> -->
+
+  <!-- 菜单 -->
+  <!-- 分类 -->
+  <scroll-view scroll-y="true" class="left_slider" >
+    <view class="broad_side_box {{dishclass == item.dish_class?'broad_active':''}}" catchtap="chooseCategory" wx:key="{{allfoodsdata}}" wx:for="{{allfoodsdata}}" data-menu_list='{{item.secondList}}' data-id="{{item.dish_class}}">
+      <!-- 分类小图标 -->
+      <!-- <view class="left_icon">
+      <block wx:if="{{dish_class%2 !== 0}}">
+        <image src="../../images/hot_icon.png"></image>
+      </block>
+      <block wx:else>
+        <image src="../../images/coupon_icon.png"></image>
+      </block>
+    </view> -->
+      <!-- <view class="right_text">{{categoryName}}</view> -->
+      <view class="right_text">{{item.categoryName}}</view>
+    </view>
+  </scroll-view>
+
+  <!-- 分类详情 -->
+  <scroll-view bindscrolltolower="scrolltolower" scroll-y="true" class="right_slider">
+    <view wx:if="{{showmode}}"  class="dish_list" bindtap="gofoodsdetil" wx:for="{{menu_list}}" wx:key="{{menu_list}}" data-id='{{item.id}}' data-price='{{item.dish_price}}' data-title='{{item.dish_name}}' data-imgname='{{item.dish_picture}}' data-imgurl="{{imageurl}}">
+      <view class="left_dish_cover">
+        <image binderror='imgErr' src="{{imageurl+item.dish_picture}}" mode="aspectFill"></image>
+      </view>
+      <view class="right_dish_cont">
+        <view class="public_omit_one dish_title">{{item.dish_name}}</view>
+        <!-- <view class="public_omit_one dish_desc">贼他妈好吃</view> -->
+        <view class="dish_comment">
+          <text>{{item.id}}人想吃</text>
+        </view>
+        <!-- <view class="public_omit_one dish_title">{{dish_name}}</view>
+        <view class="public_omit_one dish_desc">{{remark}}</view>
+        <view class="dish_comment" wx:if="{{id}}">
+          <text wx:if="{{id}}">{{id}}人想吃</text>
+        </view> -->
+        <view class="dish_bottom">
+          <!-- <text class="discount_price">￥{{dish_price}}</text>
+          <text class="price">￥{{dish_price*2}}</text> -->
+          <text class="discount_price">￥{{item.dish_price}}</text>
+          <block wx:if="{{item.unit}}">
+            <text>/{{item.unit}}</text>
+          </block>
+          <text class="price">￥222</text>
+          <image src="../../images/add.png" class="addDish" catchtap="addDish" data-foodid="{{item.id}}" data-imgname="{{item.dish_picture}}" data-price="{{item.dish_price}}" data-name="{{item.dish_name}}"></image>
+          <text class="dishCount" wx:if="{{item.count > 0}}">{{item.count}}</text>
+          <image class="reduceDish" catchtap="reduceDish" data-count="{{item.count}}" data-foodid="{{item.id}}" data-price="{{item.dish_price}}" data-name="{{item.dish_name}}" wx:if="{{item.count > 0}}" src="../../images/reduce.png"></image>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{!showmode}}" class="marle">正在努力加载数据...</view>
+  </scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

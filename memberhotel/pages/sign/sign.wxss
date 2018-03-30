@@ -1,0 +1,96 @@
+page{
+  width:100%;
+  height:100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  background-image: linear-gradient(to bottom,#E02F25,#E5615A)
+}
+.page{
+  background: none;
+}
+.header{
+  height: 230rpx;
+  background-color: #D6291F;
+}
+.header .nackimg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin-left: 54rpx;
+  margin-top: 40rpx;
+}
+.header .membertext{
+  margin-top: 68rpx;
+  margin-left: 40rpx;
+  color: #fff;
+  font-size: 0.8rem;
+}
+ .membertext view{
+  width: 280rpx;
+  color: #fff;
+  margin-bottom: 16rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.membertext view:last-child{
+  color: #FCEA6E;
+}
+.header .membercard{
+  width: 190rpx;
+  height: 60rpx;
+  margin-top: 103rpx;
+  margin-right: 30rpx;
+  border:1px solid #C02219;
+  color:#fff;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 5px;
+  background-color: #D92E26;
+}
+.subject{
+  width: 100%;
+  height: 60%;
+  text-align: center;
+}
+.title{
+  width:240rpx;
+  height:55rpx;
+  background:rgba(0,0,0,0.3);
+  line-height:50rpx;
+  border-radius: 20px;
+  margin-left:-100rpx;
+  position:relative;
+  left:50%;
+  margin-bottom: 40rpx;
+  letter-spacing:2px;
+}
+.tian{
+  font-size: 1.5rem;
+}
+.sky{
+  font-size: 3.3rem;
+  margin-right:6px;
+}
+.subject{
+  color: #fff;
+}
+.btn{
+  height:100rpx;
+  line-height:100rpx;
+  margin-top: 150rpx;
+  width: 90%;
+  background-color: #FDEB6F;
+  color: #A74608;
+  font-size:0.9rem;
+}
+.footer{
+  color: #fff;
+  width: 100%;
+  height: 120rpx;
+  line-height: 40rpx;
+  padding-left: 40rpx;
+  letter-spacing:1.5px;
+  box-sizing: border-box;
+}

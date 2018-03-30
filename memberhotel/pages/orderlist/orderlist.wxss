@@ -1,0 +1,55 @@
+.list{
+  width:100%;
+  padding:0rpx 30rpx;
+  box-sizing: border-box;
+}
+.time,.status{
+   border-bottom: 1px solid #ECECEC;
+}
+.time{
+  width:100%;
+  height:70rpx;
+  line-height: 70rpx;
+  color: #707070;
+}
+.time text{
+  font-size:0.67em;
+  margin-right: 10px;
+}
+.status{
+  display: flex;
+  width:100%;
+  height:160rpx;
+  line-height: 160rpx;
+  color: #515151;
+  font-size: 0.72em;
+  justify-content: space-between;
+}
+.status text{
+  display: inline-block;
+  width:33.3%;
+  text-align: center;
+}
+.status .state{
+  text-align: right !important;
+}
+.status .title{
+  font-weight: 600;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+.salesprice{
+  width:100%;
+  height:90rpx;
+  line-height: 90rpx;
+}
+.salesprice .sales{
+  font-size: 0.6em;
+  color: #707070;
+}
+.salesprice .price{
+  font-size: 0.69em;
+  color: #E35955;
+  font-weight: 600;
+}

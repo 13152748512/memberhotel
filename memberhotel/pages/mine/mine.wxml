@@ -1,0 +1,37 @@
+<view class='page'>
+  <view class='top clear'>
+    <image class='left' src='../../images/1.jpg'></image>
+    <view class='left'>
+      <view class='hoteltitle'>嘉信酒店</view>
+      <view class='gonggao'>公告：欢迎光临满园春饭店</view>
+    </view>
+  </view>
+  <view class='yydata'>营业信息</view>
+  <view class='yylist'>
+    <view class='public'>
+      <text>营业时间：</text>
+      <text>全天</text>
+    </view>
+    <view class='public middle'>
+      <text>营业地址：</text>
+      <text>吉林省吉林市昌邑区嘉信酒店</text>
+    </view>
+    <view class='public'>
+      <text>联系电话：</text>
+      <text>17600577553</text>
+    </view>
+  </view>
+  <view class='yydata'>关于我们</view>
+  <view class='active'>
+    <view>活动1：</view>
+    <view>关注小程序领优惠券5元，10元，20元</view>
+    <view>活动2：</view>
+    <view>家是幸福的港湾，快乐的驿站。</view>
+    <view class='mineimg'>
+      <image src='../../images/1.jpg'></image>
+      <image src='../../images/2.jpg'></image>
+      <image src='../../images/3.jpg'></image>
+      <image src='../../images/4.jpg'></image>
+    </view>
+  </view>
+</view>
