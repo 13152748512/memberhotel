@@ -26,7 +26,9 @@ Page({
     duration: 500,
     mapstatus: '',
     dishclass: '1',//初始化显示分类
-    cardata: []
+    cardata: [],
+    showmode:false,
+    menu:[]
   },
   onLoad: function () {
     var that = this
@@ -82,10 +84,8 @@ Page({
   addDish: function (e) {
     var that = this
     var obj = e.currentTarget.dataset//加进的数据
-    console.log(obj)
     var menulist = that.data.menu_list
     var globalcardata = app.globalData.globalCarData.carlist//购物车数据
-    console.log(globalcardata)
     var isrepetition
     obj.count = 1
     for (var i = 0; i < globalcardata.length; i++) {//查看购物车中有否
@@ -130,16 +130,27 @@ Page({
     var shoulist = that.data.shoulist
     var n=menu_list.length
     if (n!== 0){
-      if(n>10){
-       var arr=menu_list.splice(0,9)
-        console.log(menu_list)
-        that.setData({ menu_list:arr})
+      if(n>7){
+       var arr=menu_list.splice(0,7)
+       that.setData({ menu_list: arr, menu: menu_list, showmode: false, onlist: false })
+      }else{
+        that.setData({ showmode: true, onlist:true })
       }
-      that.setData({ showmode: true })
     }
   },
   onShareAppMessage: function () {
 
+  },
+  scrolltolower:function(){
+    var that = this
+    var menu_list = that.data.menu_list
+    var menu = that.data.menu
+    var arr=menu.splice(0,7)
+    that.setData({menu_list:menu_list.concat(arr)},function(){
+      if (menu.length == 0) {
+        that.setData({ showmode: true, onlist: true })
+      }
+    })
   },
   gorecharge: function () {
     wx.navigateTo({

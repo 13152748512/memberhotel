@@ -114,7 +114,7 @@
 
   <!-- 分类详情 -->
   <scroll-view bindscrolltolower="scrolltolower" scroll-y="true" class="right_slider">
-    <view wx:if="{{showmode}}"  class="dish_list" bindtap="gofoodsdetil" wx:for="{{menu_list}}" wx:key="{{menu_list}}" data-id='{{item.id}}' data-price='{{item.dish_price}}' data-title='{{item.dish_name}}' data-imgname='{{item.dish_picture}}' data-imgurl="{{imageurl}}">
+    <view  class="dish_list" bindtap="gofoodsdetil" wx:for="{{menu_list}}" wx:key="{{menu_list}}" data-id='{{item.id}}' data-price='{{item.dish_price}}' data-title='{{item.dish_name}}' data-imgname='{{item.dish_picture}}' data-imgurl="{{imageurl}}">
       <view class="left_dish_cover">
         <image binderror='imgErr' src="{{imageurl+item.dish_picture}}" mode="aspectFill"></image>
       </view>
@@ -144,6 +144,7 @@
       </view>
     </view>
     <view wx:if="{{!showmode}}" class="marle">正在努力加载数据...</view>
+     <view wx:if="{{onlist}}" class="marle">没有更多数据了...</view>     
   </scroll-view>
 
 

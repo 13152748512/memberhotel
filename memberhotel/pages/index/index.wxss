@@ -1,5 +1,4 @@
 @import '../../app.wxss';
-
 .seacher {
   width: 91%;
   margin: 0 auto;
@@ -351,5 +350,5 @@ swiper {
   float:right;
 }
 .marle{
-  margin:16rpx 0px 0px 150rpx;
+  margin:40rpx 0px 50rpx 150rpx;
 }
